@@ -7,19 +7,19 @@ class TestEmployee(unittest.TestCase):
 
     @classmethod
     def setUpClass(cls):
-        print('setupClass')
+        print('setupClass1')
 
     @classmethod
     def tearDownClass(cls):
-        print('teardownClass')
+        print('teardownClass1')
 
     def setUp(self):
-        print('setUp')
+        print('setUp2')
         self.emp_1 = Employee('Corey', 'Schafer', 50000)
         self.emp_2 = Employee('Sue', 'Smith', 60000)
 
     def tearDown(self):
-        print('tearDown\n')
+        print('tearDown2\n')
 
     def test_email(self):
         print('test_email')
