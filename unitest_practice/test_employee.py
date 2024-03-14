@@ -3,6 +3,14 @@ import unittest
 from employee import Employee
 
 
+def setUpModule():
+    print('Running setUpModule')
+
+
+def tearDownModule():
+    print('Running tearDownModule')
+
+
 class TestEmployee(unittest.TestCase):
 
     @classmethod
